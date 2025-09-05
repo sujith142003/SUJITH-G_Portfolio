@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUJITH Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="Portfolio Images/icon 1.png" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card,
+        .internship-card,
+        .education-card {
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover,
+        .internship-card:hover,
+        .education-card:hover {
+            transform: scale(1.03);
+        }
+
+        .gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(to right, #3b82f6, #8b5cf6);
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #3b82f6;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img class="h-14 w-13" src="Portfolio Images/Portfolio Logo .png" alt="SUJITH Portfolio logo">
+                        <span class="ml-3 text-xl font-bold gradient-text">SUJITH G_PROFILE</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#home"
+                        class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="#about"
+                        class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="#projects"
+                        class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                    <a href="#skills"
+                        class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+                    <a href="#internships"
+                        class="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Internships</a>
+                    <a href="#contact"
+                        class="bg-indigo-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-red-400 transition duration-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="pt-12 pb-8 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center">
+            <!-- Home Page-->
+            <!-- Text Content -->
+            <div class="md:w-1/2 md:pr-8 mb-4 md:mb-0">
+                <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Hello, I'm <span class="gradient-text">SUJITH G</span>
+                </h1>
+                <p class="text-base md:text-lg text-gray-600 mb-6">
+                    I am an <b> Electronics and Communication Engineering graduate </b> with expertise in IoT,
+                    automation, and embedded systems. My work blends engineering fundamentals with smart technologies
+                    like machine learning to solve real-world problems.
+                    <br> Driven by curiosity for emerging tech, I aim to design scalable, future-ready solutions. My
+                    focus is on bridging innovation with impact through intelligent and efficient engineering.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="Portfolio pdf/Sujith Profile.pdf" target="_blank"
+                        class="bg-indigo-600 hover:bg-red-400 text-white font-medium py-2 px-6 rounded-lg transition duration-300">
+                        Review My Profile
+                    </a>
+                    <a href="https://www.linkedin.com/in/sujithg20030914/" target="_blank"
+                        class="bg-indigo-600 hover:bg-red-400 text-white font-medium py-2 px-6 rounded-lg transition duration-300">
+                        Contact Me
+                    </a>
+                </div> <br>
+                <div class="flex space-x-6">
+
+                    <a href="https://www.linkedin.com/in/sujithg20030914/"
+                        class="text-gray-600 transition-transform duration-300 ease-in-out transform hover:scale-125 hover:text-red-400 hover:shadow-lg hover:shadow-gray-200">
+                        <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/sujith142003"
+                        class="text-gray-600 transition-transform duration-300 ease-in-out transform hover:scale-125 hover:text-red-400 hover:shadow-lg hover:shadow-gray-200">
+                        <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.91 2.33.69.07-.53.28-.94.54-1.15-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                    </a>
+                    <a href="https://profile.indeed.com/"
+                        class="text-gray-600 transition-transform duration-300 ease-in-out transform hover:scale-125 hover:text-red-400 hover:shadow-lg hover:shadow-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" fill="currentColor"
+                            class="h-7 w-7">
+                            <path d="M148.554 0c-21.246 0-41.002 3.71-58.863 10.883C71.94 18.191 56.185 28.95 44.11 42.41
+                            c-2.867 3.166-2.62 8.025.546 10.893a7.714 7.714 0 0010.893-.546c22.408-24.707 
+                            55.635-38.136 93.005-38.136 37.353 0 70.563 13.419 92.968 38.108a7.716 7.716 0 
+                            0010.893.547c3.166-2.868 3.413-7.727.546-10.893C242.734 28.955 226.979 
+                            18.2 205.309 10.893 187.448 3.711 167.8 0 148.554 0zM148.554 41.38c-29.708 
+                            0-57.392 10.71-77.914 30.16a7.715 7.715 0 00.545 10.894c3.167 2.868 8.026 
+                            2.62 10.894-.545 17.269-17.994 40.56-27.9 66.475-27.9 25.915 0 49.205 9.906 
+                            66.474 27.9a7.713 7.713 0 0010.894.545 7.717 7.717 0 00.546-10.894c-20.522-19.45
+                            -48.206-30.16-77.914-30.16zM171.5 133.5c-15.2 0-27.5 12.3-27.5 27.5v94c0 15.2 
+                            12.3 27.5 27.5 27.5s27.5-12.3 27.5-27.5v-94c0-15.2-12.3-27.5-27.5-27.5z" />
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="text-gray-600 transition-transform duration-300 ease-in-out transform hover:scale-125 hover:text-red-400 hover:shadow-lg hover:shadow-gray-200">
+                        <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 25 25">
+                            <path
+                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="text-gray-600 transition-transform duration-300 ease-in-out transform hover:scale-125 hover:text-red-400 hover:shadow-lg hover:shadow-gray-200">
+                        <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="text-gray-600 transition-transform duration-300 ease-in-out transform hover:scale-125 hover:text-red-400 hover:shadow-lg hover:shadow-gray-200">
+                        <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <!-- Responsive Home Image -->
+            <div class="flex justify-center"
+                style="@keyframes float {0%{transform:translateY(0) scale(0.9);}50%{transform:translateY(-12px) scale(0.9);}100%{transform:translateY(0) scale(0.9);}}">
+                <img src="Portfolio Images/suji.png" alt="Professional portfolio image coming" style="position:relative; top:20px; max-width:500px; width:100%; border-radius:12px; 
+                box-shadow:0 0 10px 5px rgba(66, 121, 209, 0.7); 
+                transform:scale(0.9); 
+                transition:transform 0.5s ease, box-shadow 0.5s ease;
+                animation: float 5s ease-in-out infinite;"
+                onmouseover="this.style.transform='scale(0.92)'; this.style.boxShadow='0 0 8px 8px rgba(59,130,246,0.8)'"
+                onmouseout="this.style.transform='scale(0.9)'; this.style.boxShadow='0 0 8px 5px rgba(59,130,246,0.7)'" />
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section Page -->
+    <section id="about" class="py-16 bg-white px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">About Me</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">"Rooted in curiosity and refined through hands-on learning,
+                    <br>my engineering path is a story of growth—where every challenge became a stepping stone toward
+                    innovation."</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/3">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-6">Personal Info</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-sm text-gray-500">Full Name</p>
+                            <p class="text-gray-800">SUJITH G</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500">Email</p>
+                            <p class="text-gray-800">sujithg505@gmail.com</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500">Contact</p>
+                            <p class="text-gray-800">7092060156 | 6379015265</p>
+                        </div>
+
+                        <div>
+                            <p class="text-sm text-gray-500">Location</p>
+                            <p class="text-gray-800">Salem District, Tamil Nadu State <br> Indian country</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500">Languages Known</p>
+                            <p class="text-gray-800">English, Tamil</p>
+                        </div>
+                    </div>
+
+                    <h3 class="text-xl font-semibold text-gray-900 mt-8 mb-6">Area of Interest</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">HTML, CSS, JS</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Web Development</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Figma Design</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">UI Designs</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Robotics Programming</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">PLC Automation</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">IoT Smart System</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">C Programming</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Basic Java</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">MATLAB</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Canva Design</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Creativity & Innovation</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Teamwork Collaboration</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Writting</span>
+                    </div> <br> <br><br>
+                   <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                        <span class="gradient-text">SUJITH G</span>
+                    </h1> <br>
+                    <div class="md:w-3/4 flex justify-center md:justify-end"
+                        style="@keyframes float {0%{transform:translateY(0px);}50%{transform:translateY(-10px);}100%{transform:translateY(0px);}}">
+                        <img src="Portfolio Images/Profile Photo.jpg" alt="Professional portrait of Sujith G"
+                            loading="lazy" style="border-radius:50%; width:18rem; height:18rem; object-fit:cover; 
+                            box-shadow:0 0 10px 5px rgba(59,130,246,0.7); 
+                            transition:transform 0.5s ease, box-shadow 0.5s ease;
+                            animation: float 4s ease-in-out infinite;"
+                            onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 10px 10px rgba(59,130,246,0.8)'"
+                            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 10px 5px rgba(59,130,246,0.7)'" />
+                    </div>
+                </div>
+
+                <!-- Education Section-->
+                <div class="md:w-2/3">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-6">Education</h3>
+                    <div class="relative pl-8 space-y-8">
+                        <!-- Education Timeline 1 -->
+                        <div class="relative timeline-item">
+                            <div class="education-card bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                                <div class="flex justify-between flex-col sm:flex-row">
+                                    <h4 class="text-lg font-medium text-gray-900"> <b> BAJAJ ENGINEERING SKILLS TRAINING (BEST Program) </b></h4>
+                                    <span class="text-indigo-600 text-sm mt-1 sm:mt-0">Feb 2025 - July 2025</span>
+                                </div>
+                                <p class="text-gray-800 font-medium mb-1">SASTRA University, Thanjavur District</p>
+                                <p class="text-gray-600 text-sm mb-3">Major: Graduate Trainee Engineer (GTE)</p>
+                                <p class="text-gray-600">
+                                    GTE – Graduate Training for Engineers (Feb – July 2025) Completed a 6-months BEST
+                                    program course in BEST Centre at SASTRA University,
+                                    Thanjavur. Focusing on PLC, Industry 4.0 (IoT), Robotics, and Industrial Automation,
+                                    Process Control System,
+                                    Digital Communication, Computer vision (AR).</p> <br>
+                                <a href=" https://www.linkedin.com/posts/sujithg20030914_graduateengineertrainee-getcoursecompleted-activity-7359109424319246337-re7Y?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEN85TYBWF3tOQaT74tGgD4kinE3ZcOm8Y8 "
+                                    target="_blank"
+                                    class="text-indigo-600 hover:text-indigo-800 font-medium text-sm flex items-center mb-1">
+                                    GTE Performance
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </a>
+                                <a href="https://drive.google.com/file/d/1xGX01BWmRf3Bu_YGzZipttLP_zSosL29/view?usp=sharing"
+                                    target="_blank"
+                                    class="text-indigo-600 hover:text-indigo-800 font-medium text-sm flex items-center mb-1">
+                                    GTE Certificate
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Education Timeline 2 -->
+                        <div class="relative timeline-item">
+                            <div class="education-card bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                                <div class="flex justify-between flex-col sm:flex-row">
+                                    <h4 class="text-lg font-medium text-gray-900"> <B>BACHELOR OF ENGINEERING (B.E) </B>
+                                    </h4>
+                                    <span class="text-indigo-600 text-sm mt-1 sm:mt-0">2021 - 2025</span>
+                                </div>
+                                <p class="text-gray-800 font-medium mb-1">Knowledge Institute of Technology (KIOT),
+                                    Salem District</p>
+                                <p class="text-gray-600 text-sm mb-3">Major: Electronics and Communication Engineering |
+                                    with 7.82 CGPA</p>
+                                <p class="text-gray-600">
+                                    Gained strong foundations in electronics, automation, Electronics and communication
+                                    while working on IoT, Embedded System, and industrial projects in real world.
+                                </p> <br>
+                                <a href="https://drive.google.com/file/d/1LP0lEQ3sqVRhmba-lb9qW6KvTkKAGM-a/view?usp=sharing"
+                                    target="_blank"
+                                    class="text-indigo-600 hover:text-indigo-800 font-medium text-sm flex items-center">
+                                    B.E - Marksheet Certificates
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Education Timeline 3 -->
+                        <div class="relative timeline-item">
+                            <div class="education-card bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                                <div class="flex justify-between flex-col sm:flex-row">
+                                    <h4 class="text-lg font-medium text-gray-900"> <b>HIGHER SECONDARY SCHOOL (HSC)</b>
+                                    </h4>
+                                    <span class="text-indigo-600 text-sm mt-1 sm:mt-0">2020 - 2021</span>
+                                </div>
+                                <p class="text-gray-800 font-medium mb-1">South Indian Matriculation Hr. Sec. School,
+                                    Omalur, Salem District</p>
+                                <p class="text-gray-600 text-sm mb-3">Major: Maths - Biology | with - 86.87% of Mark</p>
+                                <p class="text-gray-600">
+                                    Completed higher secondary with a focus on Mathematics and Science. Built strong
+                                    analytical and logical skills that prepared me for my engineering journey.
+                                </p> <br>
+                                <a href="https://drive.google.com/file/d/18LGJaznLg4jft0-olL4i1fMqrXiFb7ST/view?usp=sharing"
+                                    target="_blank"
+                                    class="text-indigo-600 hover:text-indigo-800 font-medium text-sm flex items-center">
+                                    12th Certificate
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <!-- Education Timeline 4 -->
+                        <div class="relative timeline-item">
+                            <div class="education-card bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                                <div class="flex justify-between flex-col sm:flex-row">
+                                    <h4 class="text-lg font-medium text-gray-900"><b>SECONDARY SCHOOL (SSLC) </b></h4>
+                                    <span class="text-indigo-600 text-sm mt-1 sm:mt-0">2018 - 2019</span>
+                                </div>
+                                <p class="text-gray-800 font-medium mb-1"> South Indian Matriculation Hr. Sec. School,
+                                    Omalur, Salem District </p>
+                                <p class="text-gray-600 text-sm mb-3"> Scored in 10th SSLC : 86.4% of Mark</p>
+                                <p class="text-gray-600">
+                                    Achieved distinction with consistent academic performance across all subjects.
+                                    Built a strong foundation in science, mathematics, and technology, sparking my
+                                    interest in engineering.
+                                </p> <br>
+                                <a href="https://drive.google.com/file/d/1AgZ_SgiYN6rAsvlmkAN_ZtHOuTLAOfph/view?usp=sharing"
+                                    target="_blank"
+                                    class="text-indigo-600 hover:text-indigo-800 font-medium text-sm flex items-center">
+                                    10th Certificate
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <hr>
+    <hr>
+
+    <!-- Journey Highlights Section -->
+    <section id="Awards" class="py-16 bg-gray-50 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">🏆 Journey Highlights</h2>
+                <p class="text-gray-600 whitespace-nowrap">
+                    Highlights of key achievements and recognitions that demonstrate my technical expertise and career
+                    growth. <br>
+                    Each milestone reflects consistent learning, innovation, and a results-driven approach in
+                    engineering.</p> <br> <br>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                    <!-- Award 1 -->
+                    <div class="internship-card bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <img src="Portfolio Images/Award 1.png" alt="Company logo"
+                                    class="h-10 w-10 rounded-full object-cover mr-3">
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-900">1st Prize - Circuit Debugging Event
+                                    </h3>
+                                    <p class="text-indigo-600 text-sm"> 📍Dhirajlal Gandhi College of Technology, Symposium</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-500 mb-4">
+                                <span>April 5th, 2024</span>
+                                <span class="mx-2">•</span>
+                                <span class="flex items-center text-sm text-indigo-600 mb-0.5"><a
+                                        href="https://drive.google.com/file/d/19GsePMsVtoxEI1iNYoSzvQagb2eRIWer/view?usp=sharing">Certificate
+                                        Link</a> </span>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Secured 1st Prize in the Circuit Debugging event at the National-Level Technical
+                                Symposium hosted by Dhirajlal Gandhi College of Technology on 5th April 2024, showcasing
+                                strong problem-solving skills, technical expertise, and quick analytical thinking in
+                                real-time circuit challenges.
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">Embedded
+                                    System</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">IOT
+                                    Applicatins</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">Hands
+                                    On Experience</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Award 2 -->
+                    <div class="internship-card bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <img src="Portfolio Images/Award 2.png" alt="Company logo internship"
+                                    class="h-10 w-10 rounded-full object-cover mr-3">
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-900">2nd Prize - Make a Product (MAP)
+                                    </h3>
+                                    <p class="text-indigo-600 text-sm">📍ECE-INTEC Association at KIOT, Salem</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-500 mb-4">
+                                <span>15th March 2023</span>
+                                <span class="mx-2">•</span>
+                                <span class="flex items-center text-sm text-indigo-600 mb-0.5"><a
+                                        href="https://drive.google.com/file/d/1yWe1YHhDObp-rvT4vX2DvnRULqRRya2d/view?usp=sharing">Certificate
+                                        Link</a> </span>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Won 2nd Prize in Make a Product competition organized by the ECE-INTEC Association at
+                                KIOT, for developing an innovative Auto Targeting Radar Car with Wi-Fi Control,
+                                demonstrating creativity, teamwork, and application of electronics engineering concepts
+                                in real-world problem-solving.
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">Canva
+                                    Design</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">Figma
+                                    UI Design</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">UI/UX
+                                    Projects</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Award 3 -->
+                    <div class="internship-card bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <img src="Portfolio Images/Award 3.png" alt="Company logo for internship"
+                                    class="h-10 w-10 rounded-full object-cover mr-3">
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-900">3rd Prize - Treasure Hunt Event</h3>
+                                    <p class="text-indigo-600 text-sm">📌Dhirajlal Gandhi College of Technology,
+                                        Symposium</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-500 mb-4">
+                                <span>April 5th, 2024</span>
+                                <span class="mx-2">•</span>
+                                <span class="flex items-center text-sm text-indigo-600 mb-0.5"><a
+                                        href="https://drive.google.com/file/d/1ipUox43NHMTZDdJfc2XZ5f5Cmt6VvOY-/view?usp=sharing">Certificate
+                                        Link</a> </span>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Achieved 3rd Prize in the Treasure Hunt event at the National-Level Technical Symposium
+                                hosted by Dhirajlal Gandhi College of Technology, Salem on 5th April 2024, showcasing
+                                sharp logical reasoning, teamwork, and quick decision-making skills under pressure. </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">HTML,
+                                    CSS, JS</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">Web
+                                    Design</span>
+                                <span
+                                    class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">Hosting
+                                    Development</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Award  4 -->
+                    <div class="internship-card bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <img src="Portfolio Images/Award 4.png" alt="Company logo internship"
+                                    class="h-10 w-10 rounded-full object-cover mr-3">
+                                <div>
+                                    <h2 class="text-lg font-semibold text-gray-900"> Presented a Paper in FAA activity -
+                                        <br> IOT Technology</h2>
+                                    <p class="text-indigo-600 text-sm"> 📌ECE Department at KIOT, Salem</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-500 mb-4">
+                                <span>March 2nd, 2023</span>
+                                <span class="mx-2">•</span>
+                                <span class="flex items-center text-sm text-indigo-600 mb-0.5"><a
+                                        href=" https://drive.google.com/file/d/1pyCiNhjAy5emiQc6s3ibhQTyRjm4yR1U/view?usp=sharing ">Certificate
+                                        Link</a> </span>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Presented a technical paper on the Internet of Things (IoT) in the Front Area Awareness
+                                (FAA) activity at KIOT on 28th September 2022, enhancing knowledge-sharing, presentation
+                                skills, and awareness of emerging technologies. </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">C
+                                    Program</span>
+                                <span
+                                    class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">MATLAB</span>
+                                <span
+                                    class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">Embedded
+                                    Projects</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">IOT
+                                    Projects</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+    </section>
+
+    <hr>
+    <hr>
+
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-white px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">⚡My Projects</h2>
+                <p class="text-gray-600 whitespace-nowrap">Here are some of my featured projects in various field like
+                    Web development, <br> UI Designs, IOT Project, Radar Technology Project, Electronics Devices and
+                    Automation Process.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Project 1 -->
+                <div class="project-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                    <img src="Portfolio Images/project 1.jpg" alt="Industrial" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Auto Targeting Radar Car with WI-FI Control
+                        </h3>
+                        <p class="text-gray-600 mb-4">Developed a Project for prioritizing the objects through radar
+                            technology. Features user-friendly manual override and data
+                            processing for reliable and versatile vehicle autonomy.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Radar
+                                Technology</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Web
+                                Interface</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">ESP32
+                                - WIFI Module</span>
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Ultrasonic
+                                Sensor</span>
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Realtime
+                                Processing</span>
+                        </div>
+                        <a href="https://github.com/sujith142003/Radar-Technology-Project.git" target="_blank"
+                            class="text-indigo-600 hover:text-indigo-800 font-medium text-sm flex items-center">
+                            Github Post
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/posts/sujithg20030914_robotics-innovation-engineering-activity-7244031794415566849-yRjH?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEN85TYBWF3tOQaT74tGgD4kinE3ZcOm8Y8"
+                            target="_blank"
+                            class="text-indigo-600 hover:text-indigo-800 font-medium text-sm flex items-center">
+                            LinkedIn Post
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                    <img src="Portfolio Images/project 2.png" alt="project image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Digital Announcement Board Using I2C Module
+                        </h3>
+                        <p class="text-gray-600 mb-4">Utilized four LCD I2C displays and an ESP8266 NodeMCU module to
+                            create
+                            an IoT-driven announcement board. Enabled remote content management
+                            via web server and switches, facilitating real-time public information
+                            dissemination with precise updates.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">ESP8266
+                                - WIFI</span>
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Arduino</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">LCD
+                                I2C Displays </span>
+                        </div>
+                        <a href="https://github.com/sujith142003/Digital-Announcement-Board-Using-IOT.git"
+                            target="_blank"
+                            class="text-indigo-600 hover:text-indigo-800 font-medium text-sm flex items-center">
+                            Github Details
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                        <a href="https://drive.google.com/drive/folders/1BrPEKXTNYIYmWKcMJzcZt_2aQhGPCKpf?usp=sharing"
+                            target="_blank"
+                            class="text-indigo-600 hover:text-indigo-800 font-medium text-sm flex items-center">
+                            View Project
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- Project 3 -->
+                <div class="project-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                    <img src="Portfolio Images/project 3.jpg" alt="IBM project image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Traffic Management System</h3>
+                        <p class="text-gray-600 mb-4">This project is a Traffic Management System that uses IoT sensors
+                            and cameras to watch roads in real-time.
+                            With the help of machine learning, it predicts traffic jams and suggests better routes. A
+                            mobile app shows live updates and helps drivers reach faster with less congestion.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">WebCam</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">AI &
+                                ML</span>
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Sensor</span>
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">OpenCV</span>
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">C-Code</span>
+                        </div>
+                        <a href="https://github.com/sujith142003/IBM_Trafficmanagement_NM.git" target="_blank"
+                            class="text-indigo-600 hover:text-indigo-800 font-medium text-sm flex items-center">
+                            View Project in Github
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- Project 4 -->
+                <div class="project-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                    <img src="Portfolio Images/project 4.jpg" alt="project image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Login-Webpage-Design</h3>
+                        <p class="text-gray-600 mb-4">Created a responsive login page UI using HTML and CSS with a
+                            clean, modern layout. Designed with focus on user-friendly navigation, typography, and
+                            styling for a professional web application feel. This project showcases my front-end design
+                            skills and attention to detail in UI/UX.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">HTMl</span>
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">CSS</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Web
+                                Interface</span>
+                        </div>
+                        <a href="https://github.com/sujith142003/Login-Webpage-Design-.git" target="_blank"
+                            class="text-indigo-600 hover:text-indigo-800 font-medium text-sm flex items-center">
+                            Project Details in Github
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                    <img src="Portfolio Images/project 5.jpg" alt="Barcode project" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Automatic Barcode Generator as per Plan
+                            (AI-VIN Decoder)</h3>
+                        <p class="text-gray-600 mb-4">Built an AI-driven system that decodes VINs, matches them with
+                            manufacturing plans, and auto-generates barcodes.
+                            Improves efficiency by reducing manual errors and speeding up production workflows.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Python</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">AI-Vin
+                                Decoder</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Python
+                                Libraies</span>
+                        </div>
+                        <a href="https://github.com/sujith142003/Flask_VIN_Decoder.git" target="_blank"
+                            class="text-indigo-600 hover:text-indigo-800 font-medium text-sm flex items-center">
+                            View Project Details in Github
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                    <img src="Portfolio Images/project 6.jpg" alt="Smart Helmet Project"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Smart Helmet Using IOT Devices</h3>
+                        <p class="text-gray-600 mb-4"> A safety helmet with sensors to track heart rate, temperature,
+                            gases, and falls in real time. Integrated with GPS and cloud connectivity, it sends instant
+                            alerts via mobile app for quick emergency response.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Arduino
+                                UNO</span>
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">GPS</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">WIFI
+                                Connectivity</span>
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Sensors</span>
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Android
+                                Application</span>
+                        </div>
+                        <a href="Portfolio pdf/Project SMART HELMET USING IOT .pdf" target="_blank"
+                            class="text-indigo-600 hover:text-indigo-800 font-medium text-sm flex items-center">
+                            View Project Details
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                    <img src="Portfolio Images/project 7.png" alt="Portfolio website Project"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">SUJITH Portfolio Website</h3>
+                        <p class="text-gray-600 mb-4"> “A responsive portfolio website built to showcase my skills,
+                            projects, and experiences. Designed with modern web technologies, it features animations,
+                            theme toggle, and interactive layouts. It serves as my digital identity and career showcase.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Web
+                                Development</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">UI
+                                Design</span>
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Profile
+                                Describtion</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">HTML,
+                                CSS, JS</span>
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Portfolio
+                                Development</span>
+                        </div>
+                        <a href="#" target="_blank"
+                            class="text-indigo-600 hover:text-indigo-800 font-medium text-sm flex items-center">
+                            View Project Details
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <hr>
+    <hr>
+
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-50 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Skills & Expertise</h2>
+                <p class="text-gray-600 whitespace-nowrap">
+                    “Every line of code 💻, every circuit connected 🔌, and every challenge faced ⚡ has been my training
+                    ground. My skills aren’t just tools 🛠️—they’re <br> stories of experiments 🔬, failures turned
+                    lessons, and victories carved from persistence 🏆. From programming logic 🤖 <br> to engineering
+                    solutions 🏗️, I carry not just knowledge, but the ability to make ideas real 🚀.”
+                </p>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+
+                <!-- Web Designing -->
+                <div
+                    class="skill-card bg-white p-6 rounded-lg shadow-sm border border-gray-100 text-center transition duration-300">
+                    <div class="flex justify-center mb-3">
+                        <img src="Portfolio Images/skill 1.png" alt="Web Design Icon" class="h-12 w-12 object-contain">
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-1">Web Designing</h3>
+                    <p class="text-gray-600 text-sm">Visual Website Design Creation</p>
+                </div>
+
+                <!-- Canva Design -->
+                <div
+                    class="skill-card bg-white p-6 rounded-lg shadow-sm border border-gray-100 text-center transition duration-300">
+                    <div class="flex justify-center mb-3">
+                        <img src="Portfolio Images/skill 2.png" alt="Canva Icon" class="h-12 w-12.5 object-contain">
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-1">Canva Design</h3>
+                    <p class="text-gray-600 text-sm">Visual content Creation</p>
+                </div>
+
+                <!-- Figma Designing -->
+                <div
+                    class="skill-card bg-white p-6 rounded-lg shadow-sm border border-gray-100 text-center transition duration-300">
+                    <div class="flex justify-center mb-3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Figma Logo"
+                            class="h-12 w-12 object-contain">
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-1">Figma Designs</h3>
+                    <p class="text-gray-600 text-sm">Visual UI texture Designing</p>
+                </div>
+
+                <!-- HTML, CSS, JS -->
+                <div
+                    class="skill-card bg-white p-6 rounded-lg shadow-sm border border-gray-100 text-center transition duration-300">
+                    <div class="flex justify-center mb-3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/919/919827.png" alt="HTML CSS JS Icon"
+                            class="h-12 w-12 object-contain">
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-1">HTML, CSS, JS</h3>
+                    <p class="text-gray-600 text-sm">User Friendly Website structure Development</p>
+                </div>
+
+                <!-- MATLAB -->
+                <div
+                    class="skill-card bg-white p-6 rounded-lg shadow-sm border border-gray-100 text-center transition duration-300">
+                    <div class="flex justify-center mb-3">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="MATLAB Logo"
+                            class="h-12 w-12 object-contain">
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-1">MATLAB Programming</h3>
+                    <p class="text-gray-600 text-sm">Image Processing, AI/ML, Computer vision</p>
+                </div>
+
+                <!-- Automation (KEEP ORIGINAL) -->
+                <div
+                    class="skill-card bg-white p-6 rounded-lg shadow-sm border border-gray-100 text-center transition duration-300">
+                    <div class="flex justify-center mb-3">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/360a3873-1f90-4a13-9078-1a1ba5369472.png"
+                            alt="Automation icon showing robotic arm and gears" class="h-12 w-12 object-contain">
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-1">Automation System</h3>
+                    <p class="text-gray-600 text-sm">Industrial Automation Process</p>
+                </div>
+
+                <!-- Robotics (KEEP ORIGINAL) -->
+                <div
+                    class="skill-card bg-white p-6 rounded-lg shadow-sm border border-gray-100 text-center transition duration-300">
+                    <div class="flex justify-center mb-3">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ab040033-7c76-4fef-9846-168e2450e999.png"
+                            alt="Robotics icon featuring humanoid robot and circuit board"
+                            class="h-12 w-12 object-contain">
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-90 mb-1">Robotics</h3>
+                    <p class="text-gray-600 text-sm">Robot Programming & Controlling Operations</p>
+                </div>
+
+                <!-- PLC Programming (KEEP ORIGINAL) -->
+                <div
+                    class="skill-card bg-white p-6 rounded-lg shadow-sm border border-gray-100 text-center transition duration-300">
+                    <div class="flex justify-center mb-3">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f06b4ce2-8011-42db-abfc-4b41ad020106.png"
+                            alt="PLC programming icon with ladder logic diagram and industrial controller"
+                            class="h-12 w-12 object-contain">
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-1">PLC Programming</h3>
+                    <p class="text-gray-600 text-sm">Industrial control systems</p>
+                </div>
+
+                <!-- C Programming -->
+                <div
+                    class="skill-card bg-white p-6 rounded-lg shadow-sm border border-gray-100 text-center transition duration-300">
+                    <div class="flex justify-center mb-3">
+                        <img src="Portfolio Images/skill 9.png" alt="C Programming Logo"
+                            class="h-13 w-12 object-contain">
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-1">C Programming</h3>
+                    <p class="text-gray-600 text-sm">Efficient coding & algorithm design</p>
+                </div>
+
+                <!-- Teamwork (KEEP ORIGINAL) -->
+                <div
+                    class="skill-card bg-white p-6 rounded-lg shadow-sm border border-gray-100 text-center transition duration-300">
+                    <div class="flex justify-center mb-3">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6786706a-b732-415f-ab04-15fc5c1bc304.png"
+                            alt="Teamwork icon showing multiple people collaborating on a project"
+                            class="h-12 w-12 object-contain">
+                    </div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-1">Teamwork</h3>
+                    <p class="text-gray-600 text-sm">Collaborative project execution with a Creative Model</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <hr>
+    <hr>
+
+
+
+    <!-- Internships Section -->
+    <section id="internships" class="py-16 bg-white px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Internships</h2>
+                <p class="text-gray-600 whitespace-nowrap">
+                    "💼 Internships have been a turning point in my journey, bridging classroom learning with 🌍
+                    real-world practice. <br> 🔧 Each experience sharpened my technical skills and problem-solving
+                    mindset. 🚀 They <br> shaped me into a more adaptive, industry-ready engineer."
+                </p> <br> <br>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                    <!-- Internship 1 -->
+                    <div class="internship-card bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <img src="Portfolio Images/intern 1.jpeg" alt="Company logo"
+                                    class="h-10 w-10 rounded-full object-cover mr-3">
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-900">Embedded System - Intern</h3>
+                                    <p class="text-indigo-600 text-sm">CodeBind Technologies Pvt. Ltd</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-500 mb-4">
+                                <span>3rd July 2023 - 17th July 2023</span>
+                                <span class="mx-2">•</span>
+                                <span class="flex items-center text-sm text-indigo-600 mb-0.5"><a
+                                        href="https://drive.google.com/file/d/11wgWb7XaFhltv6OjCoBnDY-JP84RV199/view?usp=sharing">Intern
+                                        Certificate Link</a> </span>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Worked on embedded system concepts and real-time applications. Gained hands-on exposure
+                                to microcontrollers and IoT devices.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">Embedded
+                                    System</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">IOT
+                                    Applicatins</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">Hands
+                                    On Experience</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Internship 2 -->
+                    <div class="internship-card bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <img src="Portfolio Images/intern 2.jpeg" alt="Company logo internship"
+                                    class="h-10 w-10 rounded-full object-cover mr-3">
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-900">Graphic Designer - Intern</h3>
+                                    <p class="text-indigo-600 text-sm">CodeCasa - Software Solutions</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-500 mb-4">
+                                <span>15 Aug 2023 - 15 Sep 2023</span>
+                                <span class="mx-2">•</span>
+                                <span class="flex items-center text-sm text-indigo-600 mb-0.5"><a
+                                        href=" https://drive.google.com/file/d/1dP0PP0p3K3mKe0n_ia7-s2knMt7xFkTX/view?usp=sharing ">Intern
+                                        Certificate Link </a> </span>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Designed creative posters and digital assets using Canva & Figma Applications. Learned
+                                fundamentals of branding and visual communication in Design field.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">Canva
+                                    Design</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">Figma
+                                    UI Design</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">UI/UX
+                                    Projects</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Internship 3 -->
+                    <div class="internship-card bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <img src="Portfolio Images/intern 3.png" alt="Company logo for internship"
+                                    class="h-10 w-10 rounded-full object-cover mr-3">
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-900">Web Development - Intern</h3>
+                                    <p class="text-indigo-600 text-sm">Cognifyz Technologies Pvt. Ltd</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-500 mb-4">
+                                <span>2nd July 2024 - 3rd Aug 2024S</span>
+                                <span class="mx-2">•</span>
+                                <span class="flex items-center text-sm text-indigo-600 mb-0.5"><a
+                                        href=" https://drive.google.com/file/d/1i72J0an6u_HzdQXWMLshxg750o6IG0Ji/view?usp=sharing ">Intern
+                                        Certificate Link</a> </span>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                By this Internship skill, I can built responsive web pages using HTML, CSS, and
+                                JavaScript in Visual Studio Code. Focused on interactive layouts, clean design, and
+                                improving frontend skills.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">HTML,
+                                    CSS, JS</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">Web
+                                    Design</span>
+                                <span
+                                    class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">Hosting
+                                    Development</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Internship 4  Inpant Training -->
+                    <div class="internship-card bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <img src="Portfolio Images/intern 4.png" alt="Company logo internship"
+                                    class="h-10 w-10 rounded-full object-cover mr-3">
+                                <div>
+                                    <h2 class="text-lg font-semibold text-gray-900">Embedded System Applicatins in
+                                        Industries (Inplant Training)</h2>
+                                    <p class="text-indigo-600 text-sm">Mikrosun Technology</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-500 mb-4">
+                                <span>May 2020 - Aug 2020</span>
+                                <span class="mx-2">•</span>
+                                <span class="flex items-center text-sm text-indigo-600 mb-0.5"><a
+                                        href="https://drive.google.com/file/d/1oL89KPKNgq7fI-xdbLboofD1ZJhiXi06/view?usp=sharing">Inplant
+                                        Training Certificate Link</a></span>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Gained hands-on exposure to microcontroller programming, industrial sensors, and
+                                real-time embedded solutions. Strengthened practical knowledge of how embedded systems
+                                drive modern automation.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">C
+                                    Program</span>
+                                <span
+                                    class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">MATLAB</span>
+                                <span
+                                    class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">Embedded
+                                    Projects</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">IOT
+                                    Projects</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+    </section>
+
+
+
+    <hr>
+    <hr>
+
+
+
+
+
+    <!-- Course Completed Section -->
+    <section id="projects" class="py-16 bg-gray-50 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Course Completion Details</h2>
+                <p class="text-gray-600 whitespace-nowrap">“Every course I’ve taken isn’t just a certificate — it’s a
+                    milestone in my journey. Each step sharpened my skills, expanded my vision, <br>and brought me
+                    closer to becoming the engineer I aspire to be.”
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Course 1 -->
+                <div class="project-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                    <img src="Portfolio Images/course 1.jpg" alt="GTE Course" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Graduate Trainee Engineer (GTE)</h3>
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <span>3 Feb 2025 - 31 July 2025 <br> Certificate No.: 25-25060005-057</span>
+                        </div>
+                        <p class="text-gray-600 mb-4"><b>Completed a 6-month Bajaj Engineering Skills Training (BEST) –
+                                GTE program at SASTRA University.</b> Gained hands-on expertise in PLC, Automation,
+                            Robotics (AMR, SCARA, COBOT, Arc Spot Welding), Industry 4.0 (IOT), Process Control, TPM,
+                            and Industrial Sensors. The course emphasized AI & ML applications in smart manufacturing,
+                            providing real-time exposure to advanced industrial machines and systems.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">PLC</span>
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Robotics</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Smart
+                                Manufacturing</span>
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Industry
+                                4.0</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Smart
+                                Vision </span>
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">TPM</span>
+                        </div>
+                        <a href="https://www.linkedin.com/posts/sujithg20030914_graduateengineertrainee-getcoursecompleted-activity-7359109424319246337-re7Y?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEN85TYBWF3tOQaT74tGgD4kinE3ZcOm8Y8 "
+                            class="text-indigo-600 hover:text-indigo-800 font-medium text-sm flex items-center">
+                            Course Certificate
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="project-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                    <img src="Portfolio Images/Course 2.jpg" alt="Network Essential Course"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Network Essentials - CISCO By Naan
+                            Mudhalvan Scheme</h3>
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <span>1 April 2023 - 4 May 2023</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">I Completed a course, through Cisco Networking Academy and Naan
+                            Mudhalvan. <br>Gained strong fundamentals in networking concepts, OSI layers, connectivity,
+                            and protocols for real-world applications.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">CISCO</span>
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Network
+                                Essential</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">OSI
+                                Model</span>
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Network
+                                Connectivity</span>
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Protocols</span>
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Network
+                                Concepts</span>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1CyCAEslyAt-1PWagvW2mAMMquhinU2jP/view?usp=sharing"
+                            class="text-indigo-600 hover:text-indigo-800 font-medium text-sm flex items-center">
+                            Course Certificate
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="project-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                    <img src="Portfolio Images/course 3.png" alt="course" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">TCS iON Career Edge - Young Professional
+                        </h3>
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <span>8 June 2022 - 22 June 2022 <br> Certificate ID: 119854-22336234-1016</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">The course offered by TATA Company, which focused on enhancing
+                            professional readiness through career guidance, business etiquette, and interview
+                            preparation. The program also provided practical exposure to accounting fundamentals, IT
+                            foundations, and an overview of Artificial Intelligence, helping me build a stronger
+                            foundation for future opportunities.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Interview
+                                Skills</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Career
+                                Readiness</span>
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Accounting
+                                & IT Fundamentals </span>
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Business
+                                Etiquette </span>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1IZFEDe0XdI7FYq4UjevdtayvhVhpz_9n/view?usp=sharing"
+                            class="text-indigo-600 hover:text-indigo-800 font-medium text-sm flex items-center">
+                            Course Certificate
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Course 4 -->
+                <div class="project-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                    <img src="Portfolio Images/Course 4.png" alt="Network Essential Course"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">C Programming - Great Learning</h3>
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <span>1 June 2024 - 15 June 2024</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Completed a C Programming course covering from Basic C
+                            fundamentals like Variables, functions, strings, arrays, and pointers, building a strong
+                            foundation in structured programming. Strengthened problem-solving and coding skills through
+                            practical exercises.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Variables
+                                & Data Types</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">IP/OP,
+                                Operators</span>
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Functions
+                            </span>
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Arrays</span>
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Structures</span>
+                        </div>
+                        <a href="https://www.mygreatlearning.com/certificate/GHAYJLPT"
+                            class="text-indigo-600 hover:text-indigo-800 font-medium text-sm flex items-center">
+                            Course Certificate
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Course 5 -->
+                <div class="project-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                    <img src="Portfolio Images/course 5.jpg" alt="Network Essential Course"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">UI/UX Design Course - Great Learning</h3>
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <span>10 May 2024 - 20 May 2024</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">The course focused on Figma, interface design, and user experience
+                            principles, along with website development basics. I gained practical exposure to HTML, CSS,
+                            and design thinking for creating modern UI/UX solutions.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Figma
+                                Design</span>
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">UI/UX</span>
+                            <span
+                                class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Responsive
+                                Design</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">HTML,
+                                CSS</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Web
+                                Designing</span>
+                        </div>
+                        <a href="https://www.mygreatlearning.com/certificate/ANWSAFTF"
+                            class="text-indigo-600 hover:text-indigo-800 font-medium text-sm flex items-center">
+                            Course Certificate
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+    </section>
+
+
+    <hr>
+    <hr>
+
+
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Let’s Connect</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Have a project in mind or want to discuss opportunities? Feel
+                    free to reach out me!
+                    <br> "I'm always open to discussing new projects, ideas, or opportunities."
+                </p>
+            </div>
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-8">
+                <form>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                            <input type="text" id="name"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" id="email"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                            <input type="text" id="subject"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="message" rows="4"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                        </div>
+                        <div class="md:col-span-2">
+                            <button type="submit"
+                                class="w-full bg-indigo-600 hover:bg-red-400 text-white font-medium py-2 px-6 rounded-lg transition duration-300">
+                                Send Message
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <img class="h-6 w-auto"
+                        src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8e6477b9-40de-4c33-ab96-ca86453fcd0a.png"
+                        alt="Portfolio logo in footer">
+                    <span class="ml-2 text-gray-900 font-medium">MyPortfolio</span>
+                </div>
+
+                <div class="flex items-center mb-4 md:mb-0">
+                    <span class="ml-2 indigo-600 hover:text-red-400 text-gray-900 font-medium">
+                        <center> “Technology is evolving faster than ever, and I’m here not just to keep up, <br> but to
+                            lead with creativity and purpose.”</center>
+                    </span>
+                </div>
+
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-red-400">
+                        <svg class="h-7 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-red-400">
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sujithg20030914/" class="text-gray-600 hover:text-red-400">
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-8 border-t border-gray-200 text-center text-gray-500 hover:text-gray-600 text-sm">
+                <p hover:text-red-400>© 2025 MyPortfolio - sujithg505@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+
+    
+
+
+    <!-- Back to Top Button -->
+    <button id="backToTop"
+        class="fixed bottom-4 right-4 bg-indigo-600 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+
+
+
+
+
+    <!-- JS - Script Section-->
+
+    <script>
+        // Back to top button functionality
+        const backToTopButton = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
